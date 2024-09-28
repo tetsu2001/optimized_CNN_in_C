@@ -1,6 +1,8 @@
 # Optimizing 2D Convolutions
 _for legal reasons, I am not allowed to publicly publish the code written, but I am more than happy to share it directly with you! Please email me at satetsu01@gmail.com_ 
-**Project Objective**: Through a hypothesis testing framework, I conducted an experiment to show how optimizing deep learning algorithms by not only utiliing low-level parallelism packages, but also by rewriting core computations to best utilize machine architecture, results in monumental performance improvements, quantified by comparing the naive implementation of 2D CNNs and the optimized version. 
+
+
+## **Project Objective**: Through a hypothesis testing framework, I conducted an experiment to show how optimizing deep learning algorithms by not only utiliing low-level parallelism packages, but also by rewriting core computations to best utilize machine architecture, results in monumental performance improvements, quantified by comparing the naive implementation of 2D CNNs and the optimized version. 
 
 ### **Overview**
 This project explores the implementation and optimization of 2D convolution algorithms. The main objective was to improve the computational efficiency of these algorithms using various optimization techniques, including SIMD (Single Instruction, Multiple Data), OpenMP, and Open MPI. 
