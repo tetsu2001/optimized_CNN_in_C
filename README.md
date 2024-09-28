@@ -1,5 +1,5 @@
 # Optimizing 2D Convolutions🔔😎
-😬_for legal reasons, I am not allowed to publicly publish the code written, but I am more than happy to share it directly with you! Please email me at satetsu01@gmail.com! You can expect a response no later than 2 week days_
+😬 _for legal reasons, I am not allowed to publicly publish the code written, but I am more than happy to share it directly with you! Please email me at satetsu01@gmail.com! You can expect a response no later than 2 week days_
 
 
 ## **Project Objective**🤖: 
