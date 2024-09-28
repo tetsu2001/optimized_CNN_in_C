@@ -34,27 +34,7 @@ This project explores the implementation and optimization of 2D convolution algo
   - **OpenMP:** Further speedup through parallel thread execution.
   - **Open MPI:** Distributed computing for multi-node parallelism.
 
-### **How to Run**
-1. **Setup:**
-   - Clone the repository and ensure you have access to `hive` machines or any other compatible multi-core system.
-   - Use `make` to compile the project and run tests:
-     ```bash
-     make task_1 TEST=tests/test_2d_small
-     ```
-
-2. **Optimization:**
-   - Run optimized versions of the project with SIMD and OpenMP:
-     ```bash
-     make task_2 TEST=tests/test_2d_small
-     ```
-
-3. **Distributed Execution:**
-   - Use Open MPI to execute across multiple machines:
-     ```bash
-     make task_3 TEST=tests/test_2d_small
-     ```
-   
-### **Results: Naive vs. Optimized Performance**
+## **Results: Naive vs. Optimized Performance**
 
 A key aspect of this project was improving the performance of the 2D convolution operations. Below is a comparison of the runtime between the naive and optimized implementations using SIMD, OpenMP, and Open MPI.
 
