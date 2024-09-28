@@ -1,8 +1,8 @@
-# Optimizing 2D Convolutions
-_for legal reasons, I am not allowed to publicly publish the code written, but I am more than happy to share it directly with you! Please email me at satetsu01@gmail.com_ 
+# Optimizing 2D Convolutions🔔😎
+😬_for legal reasons, I am not allowed to publicly publish the code written, but I am more than happy to share it directly with you! Please email me at satetsu01@gmail.com! You can expect a response no later than 2 week days_
 
 
-## **Project Objective**: 
+## **Project Objective**🤖: 
 Through a hypothesis testing framework, I conducted an experiment to show how optimizing deep learning algorithms by not only utiliing low-level parallelism packages, but also by rewriting core computations to best utilize machine architecture, results in monumental performance improvements, quantified by comparing the naive implementation of 2D CNNs and the optimized version. 
 
 ### **Overview**
@@ -37,11 +37,11 @@ This project explores the implementation and optimization of 2D convolution algo
   - **OpenMP:** Further speedup through parallel thread execution.
   - **Open MPI:** Distributed computing for multi-node parallelism.
 
-## **Results: Naive vs. Optimized Performance**
+## **Results: Naive vs. Optimized Performance🎉**
 
 A key aspect of this project was improving the performance of the 2D convolution operations. Below is a comparison of the runtime between the naive and optimized implementations using SIMD, OpenMP, and Open MPI.
 
-   #### **Runtime Comparison**
+   #### **Runtime Comparison⏰**
    
    | Version             | Task Size | Runtime (Seconds) | Speedup Factor |
    |---------------------|-----------|-------------------|----------------|
@@ -54,15 +54,15 @@ A key aspect of this project was improving the performance of the 2D convolution
    | **OpenMP Optimization**| Large     | 15.0              | ~7.68x         |
    | **Open MPI Optimization** | Large | 12.2              | ~9.44x         |
 
-   #### **Key Observations**
+   #### **Key Observations🥳**
    - **SIMD Optimization**: Achieved significant speedups by processing multiple data points in parallel. For small task sizes, SIMD achieved a speedup of around **5.25x**.
    - **OpenMP Optimization**: Leveraging multi-threading across CPU cores resulted in a further **8.1x** speedup for small task sizes and up to **7.68x** for larger task sizes.
    - **Open MPI Optimization**: Distributed parallel computing with Open MPI provided the best performance, achieving nearly **9.5x** speedup for small tasks and **9.44x** for larger tasks, highlighting the scalability of the solution.
 
-### **Conclusion**
+### **Conclusion☝🏻**
 The optimizations drastically reduced runtime, especially for larger task sizes. By utilizing SIMD, OpenMP, and Open MPI, the project demonstrated the effectiveness of parallel processing techniques in reducing computation
 
-### **Lessons Learned**
+### **Lessons Learned👩🏻‍💻🧠✍️**
 - **Optimization Strategies:** Learned how to apply different optimization techniques (SIMD, OpenMP, Open MPI) and measure their impact on performance.
 - **Parallel Computing:** Gained hands-on experience with parallel and distributed computing techniques, essential for scaling computations in high-performance environments.
 - **Debugging and Performance Tuning:** Debugged complex C code and utilized performance benchmarking to fine-tune the solution for maximum efficiency.
