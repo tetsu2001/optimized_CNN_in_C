@@ -38,25 +38,25 @@ This project explores the implementation and optimization of 2D convolution algo
 
 A key aspect of this project was improving the performance of the 2D convolution operations. Below is a comparison of the runtime between the naive and optimized implementations using SIMD, OpenMP, and Open MPI.
 
-#### **Runtime Comparison**
+   #### **Runtime Comparison**
+   
+   | Version             | Task Size | Runtime (Seconds) | Speedup Factor |
+   |---------------------|-----------|-------------------|----------------|
+   | **Naive Convolution** | Small     | 10.5              | 1x             |
+   | **SIMD Optimization** | Small     | 2.0               | ~5.25x         |
+   | **OpenMP Optimization**| Small     | 1.3               | ~8.1x          |
+   | **Open MPI Optimization** | Small | 1.1               | ~9.5x          |
+   | **Naive Convolution** | Large     | 115.2             | 1x             |
+   | **SIMD Optimization** | Large     | 28.0              | ~4.1x          |
+   | **OpenMP Optimization**| Large     | 15.0              | ~7.68x         |
+   | **Open MPI Optimization** | Large | 12.2              | ~9.44x         |
 
-| Version             | Task Size | Runtime (Seconds) | Speedup Factor |
-|---------------------|-----------|-------------------|----------------|
-| **Naive Convolution** | Small     | 10.5              | 1x             |
-| **SIMD Optimization** | Small     | 2.0               | ~5.25x         |
-| **OpenMP Optimization**| Small     | 1.3               | ~8.1x          |
-| **Open MPI Optimization** | Small | 1.1               | ~9.5x          |
-| **Naive Convolution** | Large     | 115.2             | 1x             |
-| **SIMD Optimization** | Large     | 28.0              | ~4.1x          |
-| **OpenMP Optimization**| Large     | 15.0              | ~7.68x         |
-| **Open MPI Optimization** | Large | 12.2              | ~9.44x         |
+   #### **Key Observations**
+   - **SIMD Optimization**: Achieved significant speedups by processing multiple data points in parallel. For small task sizes, SIMD achieved a speedup of around **5.25x**.
+   - **OpenMP Optimization**: Leveraging multi-threading across CPU cores resulted in a further **8.1x** speedup for small task sizes and up to **7.68x** for larger task sizes.
+   - **Open MPI Optimization**: Distributed parallel computing with Open MPI provided the best performance, achieving nearly **9.5x** speedup for small tasks and **9.44x** for larger tasks, highlighting the scalability of the solution.
 
-#### **Key Observations**
-- **SIMD Optimization**: Achieved significant speedups by processing multiple data points in parallel. For small task sizes, SIMD achieved a speedup of around **5.25x**.
-- **OpenMP Optimization**: Leveraging multi-threading across CPU cores resulted in a further **8.1x** speedup for small task sizes and up to **7.68x** for larger task sizes.
-- **Open MPI Optimization**: Distributed parallel computing with Open MPI provided the best performance, achieving nearly **9.5x** speedup for small tasks and **9.44x** for larger tasks, highlighting the scalability of the solution.
-
-#### **Conclusion**
+### **Conclusion**
 The optimizations drastically reduced runtime, especially for larger task sizes. By utilizing SIMD, OpenMP, and Open MPI, the project demonstrated the effectiveness of parallel processing techniques in reducing computation
 
 ### **Lessons Learned**
